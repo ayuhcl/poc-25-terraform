@@ -16,7 +16,5 @@ phases:
   build:
     commands:
       - echo Applying Terraform...
-      - terraform apply -auto-approve \
-      -var="ami=ami-0f58b397bc5c1f2e8" \
-      -var="bucket_name=ayu-poc-25-1"
+      - terraform apply -auto-approve -var="ami=ami-0f58b397bc5c1f2e8" -var="bucket_name=ayu-poc-25-1"
 
